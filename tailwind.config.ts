@@ -18,12 +18,23 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'hd-blue': 'hsl(var(--hd-blue))',
+				'hd-blue-dark': 'hsl(var(--hd-blue-dark))',
+				'hd-blue-light': 'hsl(var(--hd-blue-light))',
+				'text-light': 'hsl(var(--text-light))',
+				'text-regular': 'hsl(var(--text-regular))',
+				'text-medium': 'hsl(var(--text-medium))',
+				'form-border': 'hsl(var(--form-border))',
+				'form-border-focus': 'hsl(var(--form-border-focus))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

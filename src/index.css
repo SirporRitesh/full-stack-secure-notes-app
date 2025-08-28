@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,20 @@ All colors MUST be HSL.
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* HD Brand Colors */
+    --hd-blue: 217 91% 60%;
+    --hd-blue-dark: 217 91% 45%;
+    --hd-blue-light: 217 91% 70%;
+    
+    /* Text Colors */
+    --text-light: 0 0% 60%;
+    --text-regular: 222.2 84% 4.9%;
+    --text-medium: 222.2 84% 15%;
+    
+    /* Form Colors */
+    --form-border: 214 31% 91%;
+    --form-border-focus: 217 91% 60%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -101,5 +117,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
   }
 }
