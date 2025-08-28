@@ -31,11 +31,13 @@ export const AuthLayout = ({ children, title, subtitle }: AuthLayoutProps) => {
       </div>
       
       {/* Right side - Image (hidden on mobile) */}
-      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-blue-600/30 to-blue-800/40"></div>
-        <div className="relative z-10 text-white text-center">
-          <div className="w-96 h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20 animate-pulse"></div>
-        </div>
+      <div className="hidden lg:flex lg:flex-1 relative overflow-hidden">
+        <img 
+          src="/images/auth-bg.png" 
+          alt="Abstract blue design" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-hd-blue/20 via-hd-blue/30 to-hd-blue-dark/40"></div>
       </div>
     </div>
   );
