@@ -200,8 +200,9 @@ export const SignIn = () => {
   onClick={handleSendOtp}
   disabled={isLoadingOtp}
   className="text-[#367AFF] underline decoration-[#367AFF] font-medium text-sm
-             p-0 bg-transparent 
+             p-0 bg-transparent
              hover:text-[#367AFF] focus:text-[#367AFF] active:text-[#367AFF]
+             hover:bg-transparent focus:bg-transparent active:bg-transparent
              hover:underline focus:underline active:underline
              hover:decoration-[#367AFF] focus:decoration-[#367AFF] active:decoration-[#367AFF]
              outline-none ring-0"
@@ -214,7 +215,9 @@ export const SignIn = () => {
               type="button"
               onClick={handleResendOtp}
               disabled={isLoadingOtp || resendCooldown > 0}
-              className="text-sm text-hd-blue hover:text-hd-blue-dark font-medium"
+              className="text-sm font-medium p-0 h-auto text-hd-blue bg-transparent
+             hover:text-hd-blue focus:text-hd-blue active:text-hd-blue
+             hover:bg-transparent focus:bg-transparent active:bg-transparent"
             >
               {resendCooldown > 0
                 ? `Resend OTP in ${resendCooldown}s`
