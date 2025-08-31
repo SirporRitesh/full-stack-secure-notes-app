@@ -66,9 +66,14 @@ npm install
 ```markdown
 DATABASE_URL="your_mongodb_connection_string"
 JWT_SECRET="a_very_long_and_random_secret_string"
+
+# Google OAuth Credentials
+GOOGLE_CLIENT_ID="your_google_cloud_oauth_client_id"
+GOOGLE_CLIENT_SECRET="your_google_cloud_oauth_client_secret"
+
+# Gmail Credentials for sending OTP emails
 GMAIL_USER="your_gmail_address_for_otp"
 GMAIL_APP_PASSWORD="your_16_digit_gmail_app_password"
-VITE_GOOGLE_CLIENT_ID="your_google_cloud_oauth_client_id"
 ```
 - Run the backend server:
 
