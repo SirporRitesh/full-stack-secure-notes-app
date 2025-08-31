@@ -26,6 +26,8 @@
 
 ### The backend is built with Node.js, Express, MongoDB, and the frontend is powered by React + Vite + Tailwind + shadcn/ui.
 
+--
+
 ## 2) Features
 
 - **Dual Authentication Methods**: Users can sign up and sign in using either a classic Email/OTP flow or through their Google Account for a streamlined experience. All user inputs are properly validated with clear error handling.
@@ -37,9 +39,9 @@
 - **Responsive Design**: The frontend is mobile-friendly and built to closely replicate the provided design specifications.
 
 
+--
 
-
-# 3) Setup Instructions
+## 3) Setup Instructions
 
 - Clone the Repository
 ```markdown
@@ -100,6 +102,8 @@ npm run dev
 ```
 - **The application will run at → http://localhost:8080**
 
+--
+
 
 ## 4) Usage Instructions
 
@@ -122,6 +126,9 @@ npm run dev
 - Click **"Create Note"** to be taken to a new editor page.
 
 - Write your note and click **"Save Note."** You will be redirected back to the dashboard.
+
+
+--
 
 
 
@@ -148,6 +155,8 @@ npm run dev
 | /notes/:id  | PUT    | Updates a note by its ID.                      |
 | /notes/:id  | DELETE | Deletes a note by its ID.                      |
 
+
+--
 
 
 ## 6) Folder Structure
