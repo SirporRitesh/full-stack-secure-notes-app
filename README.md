@@ -26,7 +26,7 @@
 
 ### The backend is built with Node.js, Express, MongoDB, and the frontend is powered by React + Vite + Tailwind + shadcn/ui.
 
---
+  ---
 
 ## 2) Features
 
@@ -39,7 +39,7 @@
 - **Responsive Design**: The frontend is mobile-friendly and built to closely replicate the provided design specifications.
 
 
---
+  ---
 
 ## 3) Setup Instructions
 
@@ -102,7 +102,7 @@ npm run dev
 ```
 - **The application will run at → http://localhost:8080**
 
---
+  ---
 
 
 ## 4) Usage Instructions
@@ -128,7 +128,7 @@ npm run dev
 - Write your note and click **"Save Note."** You will be redirected back to the dashboard.
 
 
---
+  ---
 
 
 
@@ -156,7 +156,7 @@ npm run dev
 | /notes/:id  | DELETE | Deletes a note by its ID.                      |
 
 
---
+  ---
 
 
 ## 6) Folder Structure
