@@ -1,2 +1,2 @@
-# full-stack-secure-notes-app
+# Full Stack Secure Notes App
 
