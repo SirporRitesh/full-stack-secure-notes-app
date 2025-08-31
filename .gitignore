@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Custom ignore patterns
+*.txt
+README*
+bun.lockb
