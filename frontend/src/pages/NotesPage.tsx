@@ -89,7 +89,7 @@ const NotesPage: React.FC = () => {
   async function handleCreateNote() {
     setCreating(true);
     try {
-      const res = await fetch("http://localhost:4000/notes", {
+      const res = await fetch(`${process.env.VITE_API_URL}/notes`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

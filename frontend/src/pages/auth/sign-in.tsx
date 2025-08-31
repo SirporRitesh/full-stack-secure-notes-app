@@ -58,7 +58,7 @@ export const SignIn = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:4000/auth/verify-otp", {
+      const res = await fetch(`${process.env.VITE_API_URL}/auth/verify-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

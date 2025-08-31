@@ -28,7 +28,7 @@ export function useAuth() {
 
   const sendOTP = async (email: string) => {
     try {
-      const response = await fetch('http://localhost:4000/auth/send-otp', {
+      const response = await fetch(`${process.env.VITE_API_URL}/auth/send-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({email}),
