@@ -31,7 +31,7 @@ export default function GoogleLogin() {
   const handleCredentialResponse = async (response: any) => {
     console.log("Encoded JWT ID token: -------------------");
     const idToken = response.credential;
-    const res = await fetch("http://localhost:4000/auth/google", {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/auth/google`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ idToken: idToken }),
@@ -40,7 +40,7 @@ export default function GoogleLogin() {
 
     if (res.ok) {
       // success -> redirect
-      window.location.href = "http://localhost:8080/dashboard";
+      window.location.href = "https://hdnotesapplicationapp.vercel.app/dashboard";
     } else {
       // Handle error
     }
