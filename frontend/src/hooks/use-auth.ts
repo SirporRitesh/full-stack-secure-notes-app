@@ -31,7 +31,8 @@ export function useAuth() {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/send-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({email}),
+        body: JSON.stringify({ email }),
+        credentials: 'include', 
       });
       return await response.json();
     } catch (error) {
