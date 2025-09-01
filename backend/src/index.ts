@@ -9,7 +9,12 @@ import Test from "./models/Test.js";
 import { requireAuth, type AuthenticatedRequest } from "./middleware/requireAuth.js";
 
 const app = express();
-app.use(cors({ origin: true, credentials: true }));
+const frontendURL = process.env.FRONTEND_URL || "http://localhost:8080";
+
+app.use(cors({ 
+  origin: frontendURL, 
+  credentials: true 
+}));
 app.use(express.json());
 app.use(cookieParser());
 

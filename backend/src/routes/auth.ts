@@ -44,8 +44,8 @@ router.post("/google", async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      secure: true, // Must be true for cross-site cookies
+      sameSite: 'none', // Allows the cookie to be sent from a different domain
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -113,8 +113,8 @@ router.post("/verify-otp", async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // Only secure in production
-      sameSite: "lax",
+      secure: true, // Must be true for cross-site cookies
+      sameSite: 'none', // Allows the cookie to be sent from a different domain
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
