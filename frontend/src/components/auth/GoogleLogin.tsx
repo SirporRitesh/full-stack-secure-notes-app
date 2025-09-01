@@ -1,7 +1,11 @@
 import { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
+import { toast } from '@/hooks/use-toast';
 
 export default function GoogleLogin() {
   const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+    const navigate = useNavigate();
+  
 
   useEffect(() => {
     // @ts-ignore
@@ -39,11 +43,17 @@ export default function GoogleLogin() {
     });
 
     if (res.ok) {
-      // success -> redirect
-      window.location.href = "https://hdnotesapplicationapp.vercel.app/dashboard";
-    } else {
-      // Handle error
-    }
+        // Success! Redirect to dashboard
+        toast({ title: "Sign-in successful" });
+        navigate("/dashboard");
+      } else {
+        const { error } = await res.json();
+        toast({
+          title: "Sign-in Failed",
+          description: error || "The OTP you entered is incorrect.",
+          variant: "destructive",
+        });
+      }
   };
 
   return (
